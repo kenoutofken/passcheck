@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <title>PassCheck: The Password Strength Checker</title>
+  </head>
+  <body>
+    <form id="passwordForm">
+      <div>
+        <h2>PassCheck: Password Strength Checker</h2>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter password..."
+          oninput="updateStrength();"
+        />
+        <input type="checkbox" id="togglePassword" /> Show Password
+        <h1 id="result"></h1>
+      </div>
+      <div id="responseBox">
+        <div class="strength-bar"><span id="bar"></span></div>
+        <p id="feedback"></p>
+      </div>
+    </form>
+
+    <footer>
+      <div>
+        <p>
+          Crafted with 💦 sweat, 😢 tears, and ☕ too much caffeine by Ken Yau.
+          <i class="fa fa-copyright"></i> 2025.
+        </p>
+      </div>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

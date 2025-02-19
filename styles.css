@@ -1,0 +1,90 @@
+body {
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  margin-top: 240px;
+  padding: 50px;
+}
+
+#password {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#responseBox {
+  display: none;
+}
+#passwordForm {
+  background-color: rgba(0, 0, 0, 0.932);
+  border-radius: 36px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15%;
+  padding: 10%;
+  width: 80%;
+}
+
+.strength-bar {
+  height: 10px;
+  background: lightgray;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.strength-bar span {
+  display: block;
+  height: 100%;
+  transition: width 1s ease-in-out;
+}
+
+/* Strength bar indicator for blank password entry */
+.blank {
+  width: 0%;
+  background: rgb(179, 179, 179);
+}
+
+/* Strength bar indicator for weak password entry */
+.weak {
+  width: 33%;
+  background: red;
+}
+
+/* Strength bar indicator for medium password entry */
+.medium {
+  width: 66%;
+  background: orange;
+}
+
+/* Strength bar indicator for strong password entry */
+.strong {
+  width: 100%;
+  background: green;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+  font-size: 1rem;
+}
